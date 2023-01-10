@@ -72,13 +72,56 @@ Window {
 //    }
 
     // code 4
-    Row {
+//    Row {
+//        anchors.centerIn: parent
+//        spacing: 2
+//        MyShape {color: "red"}
+//        MyShape { color: "green"}
+//        MyShape { color: "blue"}
+//    }
+
+    // code 5 Grid Layout
+//    Grid {
+//        anchors.centerIn: parent
+//        spacing: 5
+//        rows: 3
+////        columns: 2
+
+//        MyShape { color: "red"}
+//        MyShape { color: "green"}
+//        MyShape { color: "blue"}
+//        MyShape { color: "orange"}
+//        MyShape { color: "gray"}
+//        MyShape { color: "purple"}
+//        MyShape { color: "teal"}
+//        MyShape { color: "brown"}
+//        MyShape { color: "black"}
+//    }
+
+    // code 6 flow Layout
+    Rectangle {
         anchors.centerIn: parent
-        spacing: 2
-        MyShape {color: "red"}
-        MyShape { color: "green"}
-        MyShape { color: "blue"}
+        width: 300
+        height: 400
+        color: "pink"
+
+        clip: true
+
+        Flow {
+            anchors.centerIn: parent
+            spacing: 5
+            flow: Flow.TopToBottom //LeftToRight
+
+            MyShape { color: "blue"}
+            MyShape { color: "red"}
+            MyShape { color: "green"}
+            MyShape { color: "lightblue"}
+            MyShape { color: "orange"}
+            MyShape { color: "gray"}
+            MyShape { color: "purple"}
+            MyShape { color: "teal"}
+            MyShape { color: "brown"}
+            MyShape { color: "black"}
+        }
     }
-
-
 }

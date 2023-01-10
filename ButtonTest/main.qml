@@ -4,7 +4,7 @@ import QtQuick.Window 2.15
 Window {
     width: 640
     height: 480
-    visible: true
+    visible: false
     title: qsTr("Hello World")
 
     property var middle: (height / 2) - 50
@@ -50,5 +50,4 @@ Window {
         colorClicked: "orange"
         title: "<b>Super</b> <i>Long</i> <u>Button</u>"
     }
-
 }
