@@ -6,4 +6,10 @@ Window {
     height: 480
     visible: true
     title: qsTr("Hello World")
+
+    KeyboardInput {
+        label: 'Username'
+
+        onAccepted: print('onAccepted', text)
+    }
 }
