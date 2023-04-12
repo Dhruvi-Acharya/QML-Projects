@@ -8,7 +8,7 @@ Window {
     title: qsTr("Hello World")
 
     //code 1
-    /*
+
     Rectangle {
         id: myShape
         width: 100
@@ -24,7 +24,7 @@ Window {
         y: 100
 //        anchors.centerIn: parent
 
-//        Component.onCompleted: update()
+        Component.onCompleted: update()
 
         onXChanged: update()
         onYChanged: update()
@@ -40,7 +40,7 @@ Window {
             drag.target: parent
         }
 
-    }*/
+    }
 
     // code 2
 //    property var midX: width / 2
@@ -99,29 +99,29 @@ Window {
 //    }
 
     // code 6 flow Layout
-    Rectangle {
-        anchors.centerIn: parent
-        width: 300
-        height: 400
-        color: "pink"
+//    Rectangle {
+//        anchors.centerIn: parent
+//        width: 300
+//        height: 400
+//        color: "pink"
 
-        clip: true
+//        clip: true
 
-        Flow {
-            anchors.centerIn: parent
-            spacing: 5
-            flow: Flow.TopToBottom //LeftToRight
+//        Flow {
+//            anchors.centerIn: parent
+//            spacing: 5
+//            flow: Flow.TopToBottom //LeftToRight
 
-            MyShape { color: "blue"}
-            MyShape { color: "red"}
-            MyShape { color: "green"}
-            MyShape { color: "lightblue"}
-            MyShape { color: "orange"}
-            MyShape { color: "gray"}
-            MyShape { color: "purple"}
-            MyShape { color: "teal"}
-            MyShape { color: "brown"}
-            MyShape { color: "black"}
-        }
-    }
+//            MyShape { color: "blue"}
+//            MyShape { color: "red"}
+//            MyShape { color: "green"}
+//            MyShape { color: "lightblue"}
+//            MyShape { color: "orange"}
+//            MyShape { color: "gray"}
+//            MyShape { color: "purple"}
+//            MyShape { color: "teal"}
+//            MyShape { color: "brown"}
+//            MyShape { color: "black"}
+//        }
+//    }
 }

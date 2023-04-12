@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>blank.png</file>
+        <file>HED-logo.png</file>
+        <file>HED-logo1.png</file>
+        <file>HED-logo2.png</file>
+    </qresource>
+</RCC>
